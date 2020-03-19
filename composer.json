@@ -1,0 +1,13 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Tudublin\\":"src"
+    }
+  },
+  "scripts": {
+    "serve": "php -S localhost:8000 -t public"
+  },
+  "require": {
+    "twig/twig": "^3.0"
+  }
+}
