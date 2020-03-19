@@ -1,4 +1,4 @@
-# https-github.com-dr-matt-smith-evote-movie-2020-07-movie-class-loop
+# evote-movie-2020-07-movie-class-loop
 
 - declare a PHP class `Movie` 
 
