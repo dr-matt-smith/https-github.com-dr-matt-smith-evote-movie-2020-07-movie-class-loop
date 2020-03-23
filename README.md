@@ -159,3 +159,5 @@
     - note the use of the Twig `number_format` function to ensure the pricfe is displayed to 2 decimal places `{{ movie.price | number_format(2, '.', ',') }}`
     
     - note the use of a Twig `if` statement, to display `(no votes yet)` if there are no values (total < 1), otherwise to dislay an HTML image element, whose source is `/images/` and the string image name from `Movie` object method `getStarImage()`
+    
+    - NOTE: using the 'dot' notation in Twig means first Twig looks for a public property, and if not found, it looks for a public getter METHOD, so we can write `movie.starImage` and `movie.voteAverage` etc., knowing that Twig will be invoking `movie->getStarImage()` and `movie->getVoteAverage()` and so on. As long as we conform to the lowerCamelCase naming convention for getters/setters, it makes our Twig template code much easier to read, but maintaining private properties in our classes.
